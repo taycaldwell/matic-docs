@@ -18,7 +18,7 @@ This is the minimum hardware configuration required to setup a full node:
 
 - RAM: 16-32 GB
 - CPU: 8-16 core CPU (For AWS: **c5.2xlarge**)
-- Storage: 2.5TB to 5TB SSD (make sure it is extendable)
+- Storage: 6TB to 8TB SSD (make sure it is extendable)
 
 :::tip
 
