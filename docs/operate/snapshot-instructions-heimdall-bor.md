@@ -36,6 +36,9 @@ First, you need to set up your node with **prerequisites** as per the node setup
 sudo apt-get update -y
 sudo apt-get install -y zstd pv aria2
 
+// use screen session to prevent accidental download halts
+screen -S posv1_bootstrap
+
 // replace <network> with either mainnet/mumbai depending on your use case
 network=`echo <network>`
 
@@ -44,8 +47,8 @@ aria2c -x6 -s6 https://snapshot-download.polygon.technology/heimdall-$network-in
 aria2c -x6 -s6 https://snapshot-download.polygon.technology/bor-$network-incremental-compiled-files.txt
 
 // download all incremental files, includes automatic checksum verification per increment
-aria2c -x6 -s6 -i heimdall-$network-incremental-compiled-files.txt
-aria2c -x6 -s6 -i bor-$network-incremental-compiled-files.txt
+aria2c -c -m 0 -x6 -s6 -i heimdall-$network-incremental-compiled-files.txt --max-concurrent-downloads=1
+aria2c -c -m 0 -x6 -s6 -i bor-$network-incremental-compiled-files.txt --max-concurrent-downloads=1
 
 function extract_files() {
     extract_dir=$1
