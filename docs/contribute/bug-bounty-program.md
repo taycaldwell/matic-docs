@@ -46,4 +46,7 @@ Check out the forum and join the discussion on Discord.
 * [Forum](https://forum.polygon.technology)
 * [Discord](https://discord.com/invite/0xPolygon)
 
-See also the [Immunefi Bug Bounty Program](https://immunefi.com/bounty/polygon/).
+You are encouraged to explore the following opportunities in our Bug Bounty Programs:
+* [Immunefi POS](https://immunefi.com/bounty/polygon/): this program focuses on all Smart Contract and Blockchain assets related to Polygon PoS
+* [Immunefi zkEVM](https://immunefi.com/bounty/polygonzkevm/): this program focuses on all Smart Contract and Blockchain assets related to Polygon zkEVM
+* [HackerOne](https://hackerone.com/polygon-technology): this program focuses on all web applications and other assets under Polygon Labs
