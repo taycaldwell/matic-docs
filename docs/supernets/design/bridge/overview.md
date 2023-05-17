@@ -47,7 +47,7 @@ If you choose to use another cross-chain bridging mechanism, you will need to cu
     <h2>How does message passing work?</h2>
     <h3>StateSync: real-time synchronization</h3>
     <p>Message passing between a rootchain and a Supernet is achieved through continuous state synchronization, known as StateSync. This process involves transferring state data between system calls.</p>
-    <p>Check out the <a href="/docs/supernets/design/bridge/statesync.md" style={{ textDecoration: 'underline' }}>StateSync document</a> to learn more.</p>
+    <p>Check out the <a href="/docs/supernets/design/bridge/statesync" style={{ textDecoration: 'underline' }}>StateSync document</a> to learn more.</p>
     <h3>Checkpoints: Ensuring liveliness and reference points</h3>
     <p>When passing messages from a Supernet to a rootchain, the validator set commits checkpoints, which are snapshots of the Supernet state containing only the root of the Exit events, excluding all transactions. Checkpoints serve as reference points for clients, and validators periodically checkpoint all transactions occurring on the Supernet to the rootchain. Checkpoints also ensure liveliness and are submitted to the associated rootchain asset contract.</p>
     <p>Check out the <a href="/docs/supernets/design/bridge/checkpoint.md" style={{ textDecoration: 'underline' }}>Checkpoint document</a> to learn more.</p>
