@@ -72,10 +72,10 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.7 heimdall_version=v0.3.3 network=mainnet node_type=sentry" --list-hosts
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.9 heimdall_version=v0.3.3 network=mainnet node_type=sentry" --list-hosts
 
   # Testnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.7 heimdall_version=v0.3.3 network=mumbai node_type=sentry" --list-hosts
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.9 heimdall_version=v0.3.3 network=mumbai node_type=sentry" --list-hosts
   ```
 
   <img src={useBaseUrl("img/network/full-node-mumbai.png")} />
@@ -84,10 +84,10 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.7 heimdall_version=v0.3.3 network=mainnet node_type=sentry"
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.9 heimdall_version=v0.3.3 network=mainnet node_type=sentry"
 
   # Testnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.7 heimdall_version=v0.3.3 network=mumbai node_type=sentry"
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.9 heimdall_version=v0.3.3 network=mumbai node_type=sentry"
   ```
 
 - In case you run into any issues, delete and clean the whole setup using:
