@@ -41,7 +41,7 @@ If the proposed block is accepted, it's added to the blockchain, and the state o
 
 PolyBFT limits network participation to around 100 validators, and a variable amount of stake is used as a fixed stake criterion to limit the system's security and can make the system economically vulnerable. The validator set in the PolyBFT does not update on each block but is fixed during n block periods known as an epoch.
 
-The `n` block period to define one epoch is determined by governance, and until then, validators will remain the same. At the end of the epoch, a special state transaction to validatorSetManagementContract is emitted, notifying the system about the validators' uptime during the epoch. It is up to the smart contract to reward validators by their uptime and update the validator set for the next epoch. There is a function getValidatorSet which returns the current validator set at any time.
+The `n` block period to define one epoch is determined by governance, and until then, validators will remain the same. At the end of the epoch, a special state transaction to `validatorSetManagementContract` is emitted, notifying the system about the validators' uptime during the epoch. It is up to the smart contract to reward validators by their uptime and update the validator set for the next epoch. There is a function getValidatorSet which returns the current validator set at any time.
 
 :::info Proposer selection algorithm - Section is being updated
 
@@ -77,5 +77,5 @@ At the end of each epoch, a reward calculation occurs to reward validators who a
 
 ### Network benefits
 
-- **Liveness**: It has been proven that IBFT 2.0 does not guarantee BFT persistence nor liveness when operating on a synchronous network. If a validator receives enough confirmation about a block, it can lock the proposed block (assuming it has not locked any prior). If a change were to occur because of a fault in the network, it could trigger the activation of the round change protocol, where the protocol would expect to commit the locked block at that specific height.
+- **Liveness**: It has been proven that IBFT 2.0 does not guarantee BFT persistence nor liveness when operating on asynchronous network. If a validator receives enough confirmation about a block, it can lock the proposed block (assuming it has not locked any prior). If a change were to occur because of a fault in the network, it could trigger the activation of the round change protocol, where the protocol would expect to commit the locked block at that specific height.
 - **Persistence**: If, for instance, there is a faulty network condition present where two different node subsets lock to two different blocks, the system enters into an infinite cycle of state transitions that cannot converge states and finalize the block.
