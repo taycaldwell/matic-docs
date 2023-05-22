@@ -478,6 +478,7 @@ module.exports = {
             },
           ],
         },
+        "maintain/validate/technical-prerequisites",
         "maintain/reporting-issues",
         "maintain/glossary",
       ],
