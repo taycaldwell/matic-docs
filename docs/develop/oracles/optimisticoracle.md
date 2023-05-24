@@ -216,7 +216,7 @@ In the demo, the requestor does not require an additional bond from the price pr
   yarn truffle migrate --reset --network test
   ```
 
-1. To deploy the `OptimisticDepositBox` [contract](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/demo/OptimisticDepositBox.sol) and go through a simple user flow, run the following demo script from the root of the repo:
+1. To deploy the `OptimisticDepositBox` [contract](https://github.com/UMAprotocol/dev-quickstart/blob/main/contracts/OptimisticDepositBox.sol) and go through a simple user flow, run the following demo script from the root of the repo:
 
 ```bash
 yarn truffle exec ./packages/core/scripts/demo/OptimisticDepositBox.js --network test
@@ -261,7 +261,7 @@ You should see the following output:
 
 ## Explaining the Contract Functions
 
-The `OptimisticDepositBox` [contract code](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/demo/OptimisticDepositBox.sol) shows how to interact with the Oracle.
+The `OptimisticDepositBox` [contract code](https://github.com/UMAprotocol/dev-quickstart/blob/main/contracts/OptimisticDepositBox.sol) shows how to interact with the Oracle.
 
 The `constructor` function includes a `_finderAddress` argument for the UMA `Finder` contract, which maintains a registry of the `OptimisticOracle` address, approved collateral and price identifier whitelists, and other important contract addresses.
 
