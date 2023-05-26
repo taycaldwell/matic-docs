@@ -364,7 +364,7 @@ Let’s verify the `sha256 sum` again for this file:
 Now we need to create a default config file for starting Bor.
 
 ```bash
-docker run -it  0xpolygon/bor:0.3.7 dumpconfig | sudo tee /mnt/data/bor/config.toml
+docker run -it  0xpolygon/bor:0.3.9 dumpconfig | sudo tee /mnt/data/bor/config.toml
 ```
 
 This command is going to generate a .toml file with default settings. We’re going to make a few changes to the file, so open it up with your favorite editor and make a few updates. Note: we’re only showing the lines that are changed.
@@ -396,7 +396,7 @@ datadir = "/bor-home"
 
 At this point, we should be ready to start Bor. We’re going to use this command:
 ``` bash
-docker run -p 30303:30303 -p 8545:8545 -v /mnt/data/bor:/bor-home:rw --net polygon --name bor -d --restart unless-stopped  0xpolygon/bor:0.3.7 server --config /bor-home/config.toml
+docker run -p 30303:30303 -p 8545:8545 -v /mnt/data/bor:/bor-home:rw --net polygon --name bor -d --restart unless-stopped  0xpolygon/bor:0.3.9 server --config /bor-home/config.toml
 ```
 
 If everything went well, you should see lots of logs that look like this:
