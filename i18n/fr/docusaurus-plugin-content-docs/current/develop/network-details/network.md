@@ -114,3 +114,4 @@ Les CPR Publics peuvent être soumis à des limites de trafic ou de taux en fonc
 * [SettleMint](https://docs.settlemint.com/docs/polygon-connect-to-a-node)
 * [WatchData](https://docs.watchdata.io/blockchain-apis/polygon-api)
 * [NOWNodes](https://nownodes.io/nodes/polygon-matic)
+* [Kriptonio](https://kriptonio.com/)

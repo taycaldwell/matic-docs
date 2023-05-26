@@ -38,7 +38,7 @@ module.exports = {
         htmlLang: 'de-DE',
         calendar: 'gregory',
         path: 'de',
-        },
+      },
       es: {
         label: 'Español',
         direction: 'ltr',
@@ -190,55 +190,55 @@ module.exports = {
             from: '/docs/category/faq/'
           },
           {
-            to:'/docs/maintain/validate/kb/known-issues',
-            from:'/docs/maintain/validate/faq/known-issues'
+            to: '/docs/maintain/validate/kb/known-issues',
+            from: '/docs/maintain/validate/faq/known-issues'
           },
           {
-            to:'/docs/maintain/validate/kb/how-to',
-            from:'/docs/maintain/validate/faq/how-to'
+            to: '/docs/maintain/validate/kb/how-to',
+            from: '/docs/maintain/validate/faq/how-to'
           },
           {
-            to:'/docs/faq/validator-faq',
-            from:'/docs/maintain/validate/faq/validator-faq'
+            to: '/docs/faq/validator-faq',
+            from: '/docs/maintain/validate/faq/validator-faq'
           },
           {
-            to:'/docs/maintain/validator/responsibilities',
-            from:'/docs/maintain/validate/validator-responsibilities'
+            to: '/docs/maintain/validator/responsibilities',
+            from: '/docs/maintain/validate/validator-responsibilities'
           },
           {
-            to:'/docs/operate/technical-requirements',
-            from:'/docs/develop/network-details/technical-requirements'
+            to: '/docs/operate/technical-requirements',
+            from: '/docs/develop/network-details/technical-requirements'
           },
           {
-            to:'/docs/operate/snapshot-instructions-heimdall-bor',
-            from:'/docs/develop/network-details/snapshot-instructions-heimdall-bor'
+            to: '/docs/operate/snapshot-instructions-heimdall-bor',
+            from: '/docs/develop/network-details/snapshot-instructions-heimdall-bor'
           },
           {
-            to:'/docs/operate/access-node-alchemy',
-            from:'/docs/develop/network-details/access-node-alchemy'
+            to: '/docs/operate/access-node-alchemy',
+            from: '/docs/develop/network-details/access-node-alchemy'
           },
           {
-            to:'/docs/operate/full-node-deployment',
-            from:'/docs/develop/network-details/full-node-deployment'
+            to: '/docs/operate/full-node-deployment',
+            from: '/docs/develop/network-details/full-node-deployment'
           },
           {
-            to:'/docs/operate/full-node-binaries',
-            from:'/docs/develop/network-details/full-node-binaries'
+            to: '/docs/operate/full-node-binaries',
+            from: '/docs/develop/network-details/full-node-binaries'
           },
           {
-            to:'/docs/operate/full-node-docker',
-            from:'/docs/develop/network-details/full-node-docker'
+            to: '/docs/operate/full-node-docker',
+            from: '/docs/develop/network-details/full-node-docker'
           },
           {
-            to:'/docs/operate/full-node',
-            from:'/docs/develop/network-details/full-node'
+            to: '/docs/operate/full-node',
+            from: '/docs/develop/network-details/full-node'
           },
 
         ],
         createRedirects: function (existingPath) {
           if (existingPath.startsWith('/docs/validate/')) {
             return [existingPath.replace('/docs/maintain/')
-          ];
+            ];
           }
         },
       },
@@ -246,7 +246,7 @@ module.exports = {
   ],
   onBrokenLinks: 'log',
   themeConfig: {
-    metadata: [{name: 'description', content: 'Welcome to Polygon Wiki, the official documentation for Polygon. Learn about Polygon and its suite of Ethereum-scaling solutions.'}],
+    metadata: [{ name: 'description', content: 'Welcome to Polygon Wiki, the official documentation for Polygon. Learn about Polygon and its suite of Ethereum-scaling solutions.' }],
     announcementBar: {
       id: 'banner',
       content: `
@@ -274,134 +274,134 @@ module.exports = {
         {
           title: "Resources",
           items: [
-              {
-                href: 'https://support.polygon.technology/support/home',
-                label: 'Polygon Support',
-              },
-              {
-                  label: "Advocate Program",
-                  href: "https://polygon.technology/advocate-program/"
-              },
-              {
-                label: "Polygon Funds",
-                href: "https://polygon.technology/funds/"
-              },
-              {
-                  label: "Bug Bounty",
-                  href: "https://immunefi.com/bounty/polygon/"
-              },
-              {
-                href: 'https://www.dappstorekit.io/',
-                label: 'Build your own dApp',
-                target: '_blank',
-                rel: null,
-                position: 'right',
-              },
+            {
+              href: 'https://support.polygon.technology/support/home',
+              label: 'Polygon Support',
+            },
+            {
+              label: "Advocate Program",
+              href: "https://polygon.technology/advocate-program/"
+            },
+            {
+              label: "Polygon Funds",
+              href: "https://polygon.technology/funds/"
+            },
+            {
+              label: "Bug Bounty",
+              href: "https://immunefi.com/bounty/polygon/"
+            },
+            {
+              href: 'https://www.dappstorekit.io/',
+              label: 'Build your own dApp',
+              target: '_blank',
+              rel: null,
+              position: 'right',
+            },
           ]
         },
         {
           title: "Reference",
           items: [
-              {
-                label: "Whitepaper",
-                href: "https://github.com/maticnetwork/whitepaper/"
-              },
-              {
-                label: "Lightpaper",
-                href: "https://polygon.technology/lightpaper-polygon.pdf"
-              },
-              {
-                label: "zkEVM",
-                href: "https://zkevm.polygon.technology"
-              },
-              {
-                label: "Miden",
-                href: "docs/miden/design/main"
-              },
+            {
+              label: "Whitepaper",
+              href: "https://github.com/maticnetwork/whitepaper/"
+            },
+            {
+              label: "Lightpaper",
+              href: "https://polygon.technology/lightpaper-polygon.pdf"
+            },
+            {
+              label: "zkEVM",
+              href: "https://zkevm.polygon.technology"
+            },
+            {
+              label: "Miden",
+              href: "docs/miden/design/main"
+            },
           ]
         },
         {
           title: "Native dApps",
           items: [
-                  {
-                    href: 'https://wallet.polygon.technology',
-                    label: 'PoS Wallet',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://staking.polygon.technology/',
-                    label: 'PoS Staking',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://polygonscan.com/',
-                    label: 'PoS Explorer',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://explorer.hermez.io/',
-                    label: 'Hermez',
-                    target: '_blank',
-                    rel: null,
-                  },
-                ],
+            {
+              href: 'https://wallet.polygon.technology',
+              label: 'PoS Wallet',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              href: 'https://staking.polygon.technology/',
+              label: 'PoS Staking',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              href: 'https://polygonscan.com/',
+              label: 'PoS Explorer',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              href: 'https://explorer.hermez.io/',
+              label: 'Hermez',
+              target: '_blank',
+              rel: null,
+            },
+          ],
         },
         {
           title: "Polygon Labs",
           items: [
-              {
-                label: "About Us",
-                href: "https://polygon.technology/about/"
-              },
-              {
-                label: "Contact",
-                href: "https://polygon.technology/contact-us/"
-              },
-              {
-                  label: "Blogs",
-                  href: "https://blog.polygon.technology/"
-              },
-              {
-                label: "Brand Kit",
-                href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
-              },
-            ]
+            {
+              label: "About Us",
+              href: "https://polygon.technology/about/"
+            },
+            {
+              label: "Contact",
+              href: "https://polygon.technology/contact-us/"
+            },
+            {
+              label: "Blogs",
+              href: "https://blog.polygon.technology/"
+            },
+            {
+              label: "Brand Kit",
+              href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+            },
+          ]
         },
         {
           title: "Community",
           items: [
-              {
-                href: 'https://twitter.com/0xPolygon',
-                label: 'Twitter',
-              },
-              {
-                href: 'https://discord.com/invite/0xPolygon',
-                label: 'Discord',
-              },
-              {
-                href: 'https://forum.polygon.technology/',
-                label: 'Forum',
-              },
-              {
-                href: 'https://www.reddit.com/r/0xPolygon/',
-                label: 'Reddit',
-              },
-              {
-                href: 'https://t.me/polygonofficial',
-                label: 'Telegram',
-              },
-            ]
-          },
-    ],
-    logo: {
-      alt: 'Polygon Logo',
-      src: 'img/polygon-labs.png',
-      href: 'https://polygon.technology/',
-    },
-    copyright: `Copyright © ${new Date().getFullYear()}`,
+            {
+              href: 'https://twitter.com/0xPolygon',
+              label: 'Twitter',
+            },
+            {
+              href: 'https://discord.com/invite/0xPolygon',
+              label: 'Discord',
+            },
+            {
+              href: 'https://forum.polygon.technology/',
+              label: 'Forum',
+            },
+            {
+              href: 'https://www.reddit.com/r/0xPolygon/',
+              label: 'Reddit',
+            },
+            {
+              href: 'https://t.me/polygonofficial',
+              label: 'Telegram',
+            },
+          ]
+        },
+      ],
+      logo: {
+        alt: 'Polygon Logo',
+        src: 'img/polygon-labs.png',
+        href: 'https://polygon.technology/',
+      },
+      copyright: `Copyright © ${new Date().getFullYear()}`,
     },
     image: 'polygon-logo.png',
     prism: {
@@ -435,136 +435,136 @@ module.exports = {
           label: "Explore",
           position: "left",
           items: [
-                  {
-                    to: '/docs/home/new-to-polygon',
-                    label: 'Polygon Basics',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    to: 'https://university.polygon.technology/',
-                    label: 'Polygon University',
-                    target: '_blank',
-                    rel: null,
-                  }
-                ],
+            {
+              to: '/docs/home/new-to-polygon',
+              label: 'Polygon Basics',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: 'https://university.polygon.technology/',
+              label: 'Polygon University',
+              target: '_blank',
+              rel: null,
+            }
+          ],
         },
         {
           label: "Build",
           position: "left",
           items: [
-                  {
-                    href: '/docs/develop/getting-started',
-                    label: 'Build on PoS',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/category/build-a-supernet',
-                    label: 'Build a Supernet',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://zkevm.polygon.technology/develop',
-                    label: 'Build on zkEVM',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/develop/ethereum-polygon/matic-js/get-started',
-                    label: 'Matic SDK',
-                    target: '_self',
-                    rel: null,
-                  },
+            {
+              href: '/docs/develop/getting-started',
+              label: 'Build on PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/category/build-a-supernet',
+              label: 'Build a Supernet',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: 'https://zkevm.polygon.technology/develop',
+              label: 'Build on zkEVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/develop/ethereum-polygon/matic-js/get-started',
+              label: 'Matic SDK',
+              target: '_self',
+              rel: null,
+            },
 
-                  /* Removing these links till finalization
-                  {
-                    href: '/docs/supernets/overview',
-                    label: 'Supernets',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/miden/design/main',
-                    label: 'Miden',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/polygonid/verifier/verifier-overview',
-                    label: 'ID',
-                    target: '_self',
-                    rel: null,
-                  },
-                */
-                ],
+            /* Removing these links till finalization
+            {
+              href: '/docs/supernets/overview',
+              label: 'Supernets',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/miden/design/main',
+              label: 'Miden',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/polygonid/verifier/verifier-overview',
+              label: 'ID',
+              target: '_self',
+              rel: null,
+            },
+          */
+          ],
         },
         {
           label: "Maintain",
           position: "left",
           items: [
-                  {
-                    to: '/docs/maintain/govern/governance-pos',
-                    label: 'Governance',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/operate/technical-requirements',
-                    label: 'Run a PoS node',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://zkevm.polygon.technology/setup-local-node',
-                    label: 'Run a zkEVM node',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/miden/user_docs/usage',
-                    label: 'Run a Miden VM',
-                    target: '_self',
-                    rel: null,
-                  },
-                ],
+            {
+              to: '/docs/maintain/govern/governance-pos',
+              label: 'Governance',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/operate/technical-requirements',
+              label: 'Run a PoS node',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: 'https://zkevm.polygon.technology/setup-local-node',
+              label: 'Run a zkEVM node',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/miden/user_docs/usage',
+              label: 'Run a Miden VM',
+              target: '_self',
+              rel: null,
+            },
+          ],
         },
         {
           label: "Protocols",
           position: "left",
           items: [
-                  {
-                    href: '/docs/pos/polygon-architecture',
-                    label: 'PoS',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/supernets',
-                    label: 'Supernets',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://zkevm.polygon.technology',
-                    label: 'zkEVM',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: '/docs/miden',
-                    label: 'Miden',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://0xpolygonid.github.io/tutorials/',
-                    label: 'ID',
-                    target: '_self',
-                    rel: null,
-                  },
-                ],
+            {
+              href: '/docs/pos/polygon-architecture',
+              label: 'PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/supernets',
+              label: 'Supernets',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: 'https://zkevm.polygon.technology',
+              label: 'zkEVM',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/docs/miden',
+              label: 'Miden',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: 'https://0xpolygonid.github.io/tutorials/',
+              label: 'ID',
+              target: '_self',
+              rel: null,
+            },
+          ],
         },
 
         /* we should link out to the technical specifications for each protocol as reference material
@@ -747,6 +747,12 @@ module.exports = {
               "label": "NOWNodes",
               "target": "_blank",
               "rel": null
+            },
+            {
+              "href": "https://kriptonio.com/",
+              "label": "Kriptonio",
+              "target": "_blank",
+              "rel": null
             }
           ]
         },
@@ -754,25 +760,25 @@ module.exports = {
           label: "FAQs",
           position: "right",
           items: [
-                  {
-                    to: '/docs/faq/general-faq/',
-                    label: 'PoS FAQ',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    to: '/docs/supernets/supernets-faq',
-                    label: 'Supernet FAQ',
-                    target: '_self',
-                    rel: null,
-                  },
-                  {
-                    to: 'https://zkevm.polygon.technology/faq/zkevm-general-faq',
-                    label: 'zkEVM FAQ',
-                    target: '_self',
-                    rel: null,
-                  },
-                ],
+            {
+              to: '/docs/faq/general-faq/',
+              label: 'PoS FAQ',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/docs/supernets/supernets-faq',
+              label: 'Supernet FAQ',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: 'https://zkevm.polygon.technology/faq/zkevm-general-faq',
+              label: 'zkEVM FAQ',
+              target: '_self',
+              rel: null,
+            },
+          ],
         },
         {
           href: "https://github.com/maticnetwork",
@@ -809,7 +815,7 @@ module.exports = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           remarkPlugins: [math],
-          rehypePlugins: [[katex, {strict: false, throwOnError: true,globalGroup: true}]],
+          rehypePlugins: [[katex, { strict: false, throwOnError: true, globalGroup: true }]],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
