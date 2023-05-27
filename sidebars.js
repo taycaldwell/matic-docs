@@ -638,18 +638,6 @@ module.exports = {
         "develop/ethereum-polygon/matic-js/pos/deposit-ether",
       ],
     },
-    {
-      type: "category",
-      label: "zkEVM Network",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "develop/ethereum-polygon/matic-js/zkevm/initialize-zkevm",
-        "develop/ethereum-polygon/matic-js/zkevm/zkevm-client-erc20",
-        "develop/ethereum-polygon/matic-js/zkevm/common-methods",
-      ],
-    },
     "develop/ethereum-polygon/matic-js/fx-portal",
     "develop/ethereum-polygon/matic-js/set-proof-api",
     {
