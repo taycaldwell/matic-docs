@@ -158,6 +158,17 @@ As the issue is more about lack of hardware resources try upgrading it to double
 
 ### Node is not signing any checkpoints
 
+**PreRequisite:**
+First, please point the bor_rpc_url(heimdall-config.toml) of the validator to any external infra providers and restart the services. This change helps to avoid missing checkpoints.
+
+You can find a list of Infra Providers, on the navbar, that validators can make use of.
+
+:::note
+
+At this point in time, the node will not mine blocks. So once the issue is fixed, the changes made have to be reverted for the node to return to normal functionality.
+
+:::
+
 **Description:**
 First of all, your node not signing checkpoints could be for a multiple reasons.
 
