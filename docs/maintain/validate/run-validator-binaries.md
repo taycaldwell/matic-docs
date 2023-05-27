@@ -47,7 +47,7 @@ There is limited space for accepting new validators. New validators can only joi
   sudo apt-get install build-essential
   ```
 
-* Go 1.18 installed on both the sentry and the validator machines.
+* Go 1.19 installed on both the sentry and the validator machines.
 
   To install:
 
@@ -186,7 +186,7 @@ where `RELEASE_TAG` is the tag of the release version that you install.
 For instance:
 
 ```sh
-git checkout v0.3.7
+git checkout v0.3.9
 ```
 
 Install Bor:
