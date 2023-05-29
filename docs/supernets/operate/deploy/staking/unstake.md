@@ -6,14 +6,13 @@ description: "A guide on the how to unstake validator stake."
 keywords:
   - docs
   - polygon
-  - edge
   - supernets
-  - bridge
-  - crosschain
-  - transactions
+  - stake
+  - unstake
+  - withdraw
 ---
 
-In this document, we'll go over how to unstake a validator's staked tokens and withdraw them to an external address.
+In this section, we'll go over how to unstake a validator's staked tokens and withdraw them to an external address.
 
 :::warning Breaking changes
 Supernets are rapidly evolving towards their production-ready state, and, as a result, instructions and concepts in these documents are subject to change. For production releases, we plan to version the documentation.
